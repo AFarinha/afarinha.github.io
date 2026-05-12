@@ -1,0 +1,32 @@
+﻿[
+  {
+    "name": "Microsoft Certified: Azure Data Fundamentals",
+    "issuer": "Microsoft",
+    "issued": "December 2025",
+    "credentialId": "59D234AEEB77E03C",
+    "credentialUrl": "https://learn.microsoft.com/api/credentials/share/pt-pt/AndreFarinha/59D234AEEB77E03C",
+    "skills": [
+      "Azure Data Services",
+      "Relational Data",
+      "Non-relational Data",
+      "Analytics Workloads",
+      "Microsoft Azure"
+    ]
+  },
+  {
+    "name": "Microsoft Certified: Azure Fundamentals",
+    "issuer": "Microsoft",
+    "issued": "January 2025",
+    "credentialId": "A00C388A6043709A",
+    "credentialUrl": "https://learn.microsoft.com/pt-pt/users/andrefarinha/credentials/a00c388a6043709a",
+    "skills": [
+      "Microsoft Azure",
+      "Cloud Concepts",
+      "Azure Services",
+      "Azure Pricing",
+      "Azure Governance",
+      "Cloud Security"
+    ]
+  }
+]
+

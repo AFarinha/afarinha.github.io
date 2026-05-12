@@ -1,7 +1,165 @@
 ﻿@page "/"
+@inject PortfolioDataService DataService
 
-<PageTitle>Home</PageTitle>
+<PageTitle>AndrÃ© Farinha | Senior .NET Backend Developer</PageTitle>
 
-<h1>Hello, world!</h1>
+<HeroSection Profile="profile" Contact="contact" />
 
-Welcome to your new app.
+<section id="about" class="section">
+    <div class="container">
+        <SectionTitle Eyebrow="About" Title="Backend engineering for enterprise systems" Description="A pragmatic .NET profile shaped by production systems, integrations, and long-running business applications." />
+
+        <div class="about-grid">
+            <div class="about-copy">
+                @foreach (var paragraph in profile.AboutParagraphs)
+                {
+                    <p>@paragraph</p>
+                }
+            </div>
+
+            <div class="focus-panel">
+                <span class="panel-label">Current focus</span>
+                <h3>.NET backend, APIs, Azure integrations, SQL Server, and modernization</h3>
+                <p>@profile.Summary</p>
+                <div class="focus-tags">
+                    @foreach (var highlight in profile.Highlights)
+                    {
+                        <span>@highlight</span>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="experience" class="section section-muted">
+    <div class="container">
+        <SectionTitle Eyebrow="Experience" Title="Enterprise delivery across healthcare, banking, and business platforms" Description="Roles focused on reliable backend services, legacy modernization, and production-sensitive systems." />
+        <ExperienceTimeline Items="experiences" />
+    </div>
+</section>
+
+<section id="skills" class="section">
+    <div class="container">
+        <SectionTitle Eyebrow="Technical Skills" Title="Backend-first .NET toolkit" Description="Technologies grouped by practical engineering areas, loaded from local JSON content." />
+
+        <div class="skill-search">
+            <label for="skill-filter">Filter technologies</label>
+            <input id="skill-filter" type="search" placeholder="Search .NET, Azure, SQL Server..." @bind="skillFilter" @bind:event="oninput" />
+        </div>
+
+        <div class="card-grid skills-grid">
+            @foreach (var category in FilteredSkillCategories)
+            {
+                <SkillCategoryCard Category="category" Filter="skillFilter" />
+            }
+        </div>
+    </div>
+</section>
+
+<section id="strengths" class="section section-muted">
+    <div class="container">
+        <SectionTitle Eyebrow="Professional Strengths" Title="Where I bring the most value" Description="Practical strengths developed through production support, integrations, and enterprise software delivery." />
+        <div class="card-grid strengths-grid">
+            @foreach (var strength in strengths)
+            {
+                <StrengthCard Strength="strength" />
+            }
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="section">
+    <div class="container">
+        <SectionTitle Eyebrow="Featured Projects" Title="Representative case studies" Description="An anonymized view of the kinds of systems, constraints, and technical work handled across recent roles." />
+        <div class="card-grid projects-grid">
+            @foreach (var project in projects)
+            {
+                <ProjectCard Project="project" />
+            }
+        </div>
+    </div>
+</section>
+
+<section id="education" class="section section-muted">
+    <div class="container">
+        <SectionTitle Eyebrow="Education" Title="Computer engineering background" />
+        <div class="education-list">
+            @foreach (var item in education)
+            {
+                <article class="education-item">
+                    <div>
+                        <h3>@item.Title</h3>
+                        <p>@item.Institution</p>
+                    </div>
+                    <div class="meta-block">
+                        <span>@item.Period</span>
+                        <span>@item.Location</span>
+                    </div>
+                </article>
+            }
+        </div>
+    </div>
+</section>
+
+<section id="certifications" class="section">
+    <div class="container">
+        <SectionTitle Eyebrow="Certifications" Title="Microsoft Azure certifications" Description="Microsoft fundamentals certifications paired with practical Azure usage in backend enterprise solutions." />
+
+        <div class="certification-highlight">
+            <span>Microsoft Certified</span>
+            <p>@profile.AzureHighlight</p>
+        </div>
+
+        <div class="card-grid certifications-grid">
+            @foreach (var certification in certifications)
+            {
+                <CertificationCard Certification="certification" />
+            }
+        </div>
+    </div>
+</section>
+
+<ContactSection Contact="contact" />
+
+@code {
+    private ProfileInfo profile = new();
+    private ContactInfo contact = new();
+    private IReadOnlyList<Experience> experiences = [];
+    private IReadOnlyList<SkillCategory> skillCategories = [];
+    private IReadOnlyList<Project> projects = [];
+    private IReadOnlyList<Education> education = [];
+    private IReadOnlyList<Certification> certifications = [];
+    private IReadOnlyList<ProfessionalStrength> strengths = [];
+    private string skillFilter = string.Empty;
+
+    private IEnumerable<SkillCategory> FilteredSkillCategories
+    {
+        get
+        {
+            if (string.IsNullOrWhiteSpace(skillFilter))
+            {
+                return skillCategories;
+            }
+
+            var filter = skillFilter.Trim();
+            return skillCategories
+                .Where(category => category.Name.Contains(filter, StringComparison.OrdinalIgnoreCase)
+                    || category.Skills.Any(skill => skill.Contains(filter, StringComparison.OrdinalIgnoreCase)));
+        }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        profile = await DataService.GetAsync<ProfileInfo>("profile.json") ?? new();
+        contact = await DataService.GetAsync<ContactInfo>("contact.json") ?? new();
+        experiences = await DataService.GetListAsync<Experience>("experience.json");
+        skillCategories = await DataService.GetListAsync<SkillCategory>("skills.json");
+        projects = await DataService.GetListAsync<Project>("projects.json");
+        education = await DataService.GetListAsync<Education>("education.json");
+        certifications = await DataService.GetListAsync<Certification>("certifications.json");
+        strengths = await DataService.GetListAsync<ProfessionalStrength>("strengths.json");
+    }
+}
+
+

@@ -199,8 +199,6 @@ C:\git\AndreFarinhaPortfolio\bin\Debug\net9.0\wwwroot\_framework\dotnet.runtime.
 C:\git\AndreFarinhaPortfolio\bin\Debug\net9.0\wwwroot\_framework\icudt_CJK.tjcz0u77k5.dat
 C:\git\AndreFarinhaPortfolio\bin\Debug\net9.0\wwwroot\_framework\icudt_EFIGS.tptq2av103.dat
 C:\git\AndreFarinhaPortfolio\bin\Debug\net9.0\wwwroot\_framework\icudt_no_CJK.lfu7j35m59.dat
-C:\git\AndreFarinhaPortfolio\bin\Debug\net9.0\wwwroot\_framework\AndreFarinhaPortfolio.w90q2ivyei.wasm
-C:\git\AndreFarinhaPortfolio\bin\Debug\net9.0\wwwroot\_framework\AndreFarinhaPortfolio.qptwb164bb.pdb
 C:\git\AndreFarinhaPortfolio\bin\Debug\net9.0\wwwroot\_framework\blazor.boot.json
 C:\git\AndreFarinhaPortfolio\bin\Debug\net9.0\wwwroot\_framework\blazor.webassembly.js.gz
 C:\git\AndreFarinhaPortfolio\bin\Debug\net9.0\wwwroot\_framework\Microsoft.AspNetCore.Authorization.j0mj4vhukl.wasm.gz
@@ -403,8 +401,6 @@ C:\git\AndreFarinhaPortfolio\bin\Debug\net9.0\wwwroot\_framework\dotnet.runtime.
 C:\git\AndreFarinhaPortfolio\bin\Debug\net9.0\wwwroot\_framework\icudt_CJK.tjcz0u77k5.dat.gz
 C:\git\AndreFarinhaPortfolio\bin\Debug\net9.0\wwwroot\_framework\icudt_EFIGS.tptq2av103.dat.gz
 C:\git\AndreFarinhaPortfolio\bin\Debug\net9.0\wwwroot\_framework\icudt_no_CJK.lfu7j35m59.dat.gz
-C:\git\AndreFarinhaPortfolio\bin\Debug\net9.0\wwwroot\_framework\AndreFarinhaPortfolio.w90q2ivyei.wasm.gz
-C:\git\AndreFarinhaPortfolio\bin\Debug\net9.0\wwwroot\_framework\AndreFarinhaPortfolio.qptwb164bb.pdb.gz
 C:\git\AndreFarinhaPortfolio\bin\Debug\net9.0\wwwroot\_framework\blazor.boot.json.gz
 C:\git\AndreFarinhaPortfolio\bin\Debug\net9.0\AndreFarinhaPortfolio.staticwebassets.runtime.json
 C:\git\AndreFarinhaPortfolio\bin\Debug\net9.0\AndreFarinhaPortfolio.staticwebassets.endpoints.json
@@ -1068,9 +1064,6 @@ C:\git\AndreFarinhaPortfolio\obj\Debug\net9.0\compressed\3im0oz0xxo-yhi5uv9pw6.g
 C:\git\AndreFarinhaPortfolio\obj\Debug\net9.0\compressed\cj88g59i4r-tjcz0u77k5.gz
 C:\git\AndreFarinhaPortfolio\obj\Debug\net9.0\compressed\tn2r7e5e2i-tptq2av103.gz
 C:\git\AndreFarinhaPortfolio\obj\Debug\net9.0\compressed\yi7wajovb5-lfu7j35m59.gz
-C:\git\AndreFarinhaPortfolio\obj\Debug\net9.0\compressed\h8gomi4qnt-w90q2ivyei.gz
-C:\git\AndreFarinhaPortfolio\obj\Debug\net9.0\compressed\yts0xqxitq-qptwb164bb.gz
-C:\git\AndreFarinhaPortfolio\obj\Debug\net9.0\compressed\t2ks7e61t6-mdcj4t2j4x.gz
 C:\git\AndreFarinhaPortfolio\obj\Debug\net9.0\staticwebassets.build.json
 C:\git\AndreFarinhaPortfolio\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\git\AndreFarinhaPortfolio\obj\Debug\net9.0\staticwebassets.development.json
@@ -1080,3 +1073,11 @@ C:\git\AndreFarinhaPortfolio\obj\Debug\net9.0\AndreFarinhaPortfolio.dll
 C:\git\AndreFarinhaPortfolio\obj\Debug\net9.0\refint\AndreFarinhaPortfolio.dll
 C:\git\AndreFarinhaPortfolio\obj\Debug\net9.0\AndreFarinhaPortfolio.pdb
 C:\git\AndreFarinhaPortfolio\obj\Debug\net9.0\ref\AndreFarinhaPortfolio.dll
+C:\git\AndreFarinhaPortfolio\bin\Debug\net9.0\wwwroot\_framework\AndreFarinhaPortfolio.nc3if8bv1u.wasm
+C:\git\AndreFarinhaPortfolio\bin\Debug\net9.0\wwwroot\_framework\AndreFarinhaPortfolio.p3zwkgo5fm.pdb
+C:\git\AndreFarinhaPortfolio\bin\Debug\net9.0\wwwroot\_framework\AndreFarinhaPortfolio.nc3if8bv1u.wasm.gz
+C:\git\AndreFarinhaPortfolio\bin\Debug\net9.0\wwwroot\_framework\AndreFarinhaPortfolio.p3zwkgo5fm.pdb.gz
+C:\git\AndreFarinhaPortfolio\obj\Debug\net9.0\AndreFarinhaPortfolio.sourcelink.json
+C:\git\AndreFarinhaPortfolio\obj\Debug\net9.0\compressed\h8gomi4qnt-nc3if8bv1u.gz
+C:\git\AndreFarinhaPortfolio\obj\Debug\net9.0\compressed\yts0xqxitq-p3zwkgo5fm.gz
+C:\git\AndreFarinhaPortfolio\obj\Debug\net9.0\compressed\t2ks7e61t6-ukjtv4dcal.gz

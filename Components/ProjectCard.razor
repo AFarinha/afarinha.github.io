@@ -1,0 +1,23 @@
+﻿<article class="info-card project-card">
+    <h3>@Project.Title</h3>
+    <p>@Project.Description</p>
+
+    <ul class="clean-list compact">
+        @foreach (var highlight in Project.Highlights)
+        {
+            <li>@highlight</li>
+        }
+    </ul>
+
+    <div class="tag-list">
+        @foreach (var technology in Project.Technologies)
+        {
+            <span>@technology</span>
+        }
+    </div>
+</article>
+
+@code {
+    [Parameter] public Project Project { get; set; } = new();
+}
+

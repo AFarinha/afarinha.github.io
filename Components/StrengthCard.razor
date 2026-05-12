@@ -1,0 +1,10 @@
+﻿<article class="info-card strength-card">
+    <span class="card-icon" aria-hidden="true">@Strength.Icon</span>
+    <h3>@Strength.Title</h3>
+    <p>@Strength.Description</p>
+</article>
+
+@code {
+    [Parameter] public ProfessionalStrength Strength { get; set; } = new();
+}
+

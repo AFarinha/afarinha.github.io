@@ -1,0 +1,31 @@
+﻿<article class="info-card certification-card">
+    <div>
+        <h3>@Certification.Name</h3>
+        <p>@Certification.Issuer</p>
+    </div>
+
+    <dl class="credential-details">
+        <div>
+            <dt>Issued</dt>
+            <dd>@Certification.Issued</dd>
+        </div>
+        <div>
+            <dt>Credential ID</dt>
+            <dd>@Certification.CredentialId</dd>
+        </div>
+    </dl>
+
+    <div class="tag-list">
+        @foreach (var skill in Certification.Skills)
+        {
+            <span>@skill</span>
+        }
+    </div>
+
+    <a class="btn btn-secondary card-action" href="@Certification.CredentialUrl" target="_blank" rel="noopener">View Credential</a>
+</article>
+
+@code {
+    [Parameter] public Certification Certification { get; set; } = new();
+}
+

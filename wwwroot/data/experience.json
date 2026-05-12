@@ -1,0 +1,113 @@
+﻿[
+  {
+    "company": "Polarising",
+    "role": "Senior Backend Developer",
+    "period": "June 2023 â€“ Present",
+    "location": "Lisbon, Portugal",
+    "description": "Working as a Senior Backend Developer in healthcare-related projects for AdvanceCare, focused on backend development, REST APIs, integrations, background jobs, and production support within the .NET ecosystem.",
+    "responsibilities": [
+      "Design, develop, and maintain backend services and REST APIs using C# and .NET 6.",
+      "Develop scheduled background jobs to support business-critical healthcare processes.",
+      "Integrate backend systems with external services using Azure services such as Blob Storage and API Management.",
+      "Implement and support secure authentication mechanisms using JWT.",
+      "Participate in backend solution design discussions, technical analysis, and effort estimation.",
+      "Support the full software development lifecycle, from development and testing to deployment and production monitoring.",
+      "Contribute to troubleshooting, issue analysis, and stabilization of enterprise healthcare systems.",
+      "Work closely with cross-functional teams to deliver reliable, maintainable, and scalable backend solutions."
+    ],
+    "technologies": [
+      "C#",
+      ".NET 6",
+      "ASP.NET Core",
+      "REST APIs",
+      "Azure Blob Storage",
+      "Azure API Management",
+      "JWT",
+      "SQL Server",
+      "Git",
+      "Azure DevOps"
+    ]
+  },
+  {
+    "company": "Noesis",
+    "role": "Senior Fullstack Developer",
+    "period": "February 2020 â€“ May 2023",
+    "location": "Coimbra, Portugal",
+    "description": "Worked as a Senior Fullstack Developer in a web development team responsible for delivering custom enterprise solutions tailored to different client business needs.",
+    "responsibilities": [
+      "Developed web applications using C#, .NET Core 3, Angular 9, and TypeScript.",
+      "Built backend features, APIs, and business logic using the .NET ecosystem.",
+      "Worked with the .NET Zero boilerplate to accelerate the development of enterprise web applications.",
+      "Delivered tailor-made solutions adapted to specific client requirements across multiple industries.",
+      "Contributed to mobile application development using Xamarin Forms, Xamarin.Android, Xamarin.iOS, and React Native.",
+      "Worked on custom solutions based on nopCommerce, including platform configuration, custom development, and feature adaptation.",
+      "Created and adapted custom functionality for business requirements not available out of the box.",
+      "Collaborated with multidisciplinary teams to deliver web and mobile solutions for clients in sectors such as retail, healthcare, insurance, public sector, and business services."
+    ],
+    "technologies": [
+      "C#",
+      ".NET Core",
+      "ASP.NET Core",
+      "Angular",
+      "TypeScript",
+      ".NET Zero",
+      "nopCommerce",
+      "Xamarin",
+      "React Native",
+      "SQL Server",
+      "Git"
+    ]
+  },
+  {
+    "company": "Softinsa",
+    "role": ".NET Fullstack Developer",
+    "period": "August 2015 â€“ March 2020",
+    "location": "Tomar, Portugal",
+    "description": "Worked as a .NET Fullstack Developer in the development team responsible for banking solutions for Millennium BCP, mainly in the credit area.",
+    "responsibilities": [
+      "Developed and maintained internal banking applications using C#, .NET Framework, SQL Server, Web Forms, Windows Services, and SOAP web services.",
+      "Worked on corrective and evolutionary development of business-critical banking systems.",
+      "Supported legacy enterprise applications across multiple layers, including database, backend services, and user interface.",
+      "Analysed bugs, implemented fixes, and delivered new features under strict banking quality and reliability standards.",
+      "Worked with SQL Server for data access, troubleshooting, and support of business logic.",
+      "Contributed to the stability, maintainability, and evolution of internal applications used in the banking sector.",
+      "Gained strong experience working with legacy systems, enterprise constraints, and production-sensitive environments."
+    ],
+    "technologies": [
+      "C#",
+      ".NET Framework",
+      "ASP.NET Web Forms",
+      "SQL Server",
+      "Windows Services",
+      "SOAP Web Services",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Git"
+    ]
+  },
+  {
+    "company": "TrigÃ©nius",
+    "role": "Junior Developer / Internship",
+    "period": "July 2014 â€“ August 2015",
+    "location": "FÃ¡tima, Portugal",
+    "description": "Started professional career as a Junior Developer, working on tailored business and billing solutions using PHC and Primavera systems.",
+    "responsibilities": [
+      "Developed and maintained business-oriented solutions using C# and .NET.",
+      "Worked on custom billing and financial integration solutions based on PHC and Primavera.",
+      "Developed an internal scheduling and financial integration tool using C# .NET.",
+      "Created and adapted reports using Crystal Reports.",
+      "Worked with SQL to support reporting, data analysis, and business processes.",
+      "Gained strong foundations in business software, reporting, database handling, and customer-oriented development."
+    ],
+    "technologies": [
+      "C#",
+      ".NET",
+      "SQL",
+      "Crystal Reports",
+      "PHC",
+      "Primavera"
+    ]
+  }
+]
+

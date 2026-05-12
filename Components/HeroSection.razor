@@ -1,0 +1,47 @@
+﻿<section id="home" class="hero">
+    <div class="container hero-grid">
+        <div class="hero-copy">
+            <span class="eyebrow">Portfolio</span>
+            <p class="hero-name">@Profile.Name</p>
+            <h1>@Profile.Headline</h1>
+            <p class="hero-subtitle">@Profile.Subtitle</p>
+            <p class="hero-support">@Profile.Summary</p>
+
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="#experience">View Experience</a>
+                <a class="btn btn-secondary" href="#skills">Technical Skills</a>
+                <a class="btn btn-secondary" href="#projects">Featured Projects</a>
+                <a class="btn btn-secondary" href="#contact">Contact Me</a>
+                @if (!string.IsNullOrWhiteSpace(Contact.CvUrl))
+                {
+                    <a class="btn btn-ghost" href="@Contact.CvUrl" target="_blank" rel="noopener">Download CV</a>
+                }
+                else
+                {
+                    <button class="btn btn-ghost" type="button" disabled>Download CV</button>
+                }
+            </div>
+        </div>
+
+        <div class="hero-panel" aria-label="Professional highlights">
+            <div class="hero-role">
+                <span>@Profile.Role</span>
+                <strong>@Profile.Location</strong>
+            </div>
+            <div class="highlight-grid">
+                @foreach (var highlight in Profile.Highlights)
+                {
+                    <article class="highlight-card">
+                        <span>@highlight</span>
+                    </article>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+
+@code {
+    [Parameter] public ProfileInfo Profile { get; set; } = new();
+    [Parameter] public ContactInfo Contact { get; set; } = new();
+}
+

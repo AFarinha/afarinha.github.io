@@ -1,0 +1,32 @@
+﻿<article class="info-card skill-card">
+    <h3>@Category.Name</h3>
+    @if (!string.IsNullOrWhiteSpace(Category.Description))
+    {
+        <p>@Category.Description</p>
+    }
+    <div class="tag-list">
+        @foreach (var skill in VisibleSkills)
+        {
+            <span>@skill</span>
+        }
+    </div>
+</article>
+
+@code {
+    [Parameter] public SkillCategory Category { get; set; } = new();
+    [Parameter] public string Filter { get; set; } = string.Empty;
+
+    private IEnumerable<string> VisibleSkills
+    {
+        get
+        {
+            if (string.IsNullOrWhiteSpace(Filter) || Category.Name.Contains(Filter, StringComparison.OrdinalIgnoreCase))
+            {
+                return Category.Skills;
+            }
+
+            return Category.Skills.Where(skill => skill.Contains(Filter, StringComparison.OrdinalIgnoreCase));
+        }
+    }
+}
+

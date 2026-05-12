@@ -6,7 +6,13 @@
     <NotFound>
         <PageTitle>Not found</PageTitle>
         <LayoutView Layout="@typeof(MainLayout)">
-            <p role="alert">Sorry, there's nothing at this address.</p>
+            <section class="section narrow" role="alert">
+                <h1>Page not found</h1>
+                <p>The portfolio section you requested could not be found.</p>
+                <a class="btn btn-primary" href="">Return home</a>
+            </section>
         </LayoutView>
     </NotFound>
 </Router>
+
+

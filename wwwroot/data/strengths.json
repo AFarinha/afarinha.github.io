@@ -1,0 +1,53 @@
+﻿[
+  {
+    "title": "Backend Engineering",
+    "description": "Focused on building reliable backend services, REST APIs, and integrations using C#, .NET, and SQL Server.",
+    "icon": "BE"
+  },
+  {
+    "title": "Enterprise Systems",
+    "description": "Experienced with long-running business applications where reliability, maintainability, and operational clarity matter.",
+    "icon": "ES"
+  },
+  {
+    "title": "API Design",
+    "description": "Comfortable designing and maintaining REST APIs that support real business workflows and external integrations.",
+    "icon": "API"
+  },
+  {
+    "title": "Legacy Modernization",
+    "description": "Experienced in maintaining legacy .NET Framework systems and supporting gradual modernization to more modern .NET architectures.",
+    "icon": "LM"
+  },
+  {
+    "title": "Production Support",
+    "description": "Comfortable investigating production issues, analysing logs, troubleshooting integrations, and improving system reliability.",
+    "icon": "PS"
+  },
+  {
+    "title": "Azure Integrations",
+    "description": "Practical experience integrating backend systems with Azure services such as Blob Storage and API Management.",
+    "icon": "AZ"
+  },
+  {
+    "title": "SQL Server Troubleshooting",
+    "description": "Strong SQL Server experience across data access, issue analysis, stored procedures, and business data flows.",
+    "icon": "SQL"
+  },
+  {
+    "title": "Pragmatic Architecture",
+    "description": "Values clean, maintainable, and pragmatic architecture aligned with real business needs.",
+    "icon": "PA"
+  },
+  {
+    "title": "Healthcare and Banking Experience",
+    "description": "Background in production-sensitive domains with strict expectations for reliability, stability, and confidentiality.",
+    "icon": "HB"
+  },
+  {
+    "title": "Business-Critical Systems",
+    "description": "Experienced supporting applications and integrations where downtime, data quality, and operational impact matter.",
+    "icon": "BC"
+  }
+]
+

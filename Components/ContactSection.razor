@@ -1,0 +1,50 @@
+﻿<section id="contact" class="section contact-section">
+    <div class="container contact-grid">
+        <div>
+            <SectionTitle Eyebrow="Contact" Title="Backend .NET opportunities" Description="@Contact.Message" />
+            <p class="contact-note">Interested in backend .NET opportunities focused on enterprise systems, APIs, integrations, cloud services, and application modernization.</p>
+        </div>
+
+        <div class="contact-card">
+            <div class="contact-row">
+                <span>Location</span>
+                <strong>@Contact.Location</strong>
+            </div>
+            <div class="contact-row">
+                <span>Availability</span>
+                <strong>@Contact.Availability</strong>
+            </div>
+            <div class="contact-actions">
+                @if (HasConfiguredEmail)
+                {
+                    <a class="btn btn-primary" href="mailto:@Contact.Email">Contact Me</a>
+                }
+                else
+                {
+                    <a class="btn btn-primary" href="@Contact.LinkedIn" target="_blank" rel="noopener">Contact Me</a>
+                }
+                <a class="btn btn-secondary" href="@Contact.LinkedIn" target="_blank" rel="noopener">LinkedIn</a>
+                <a class="btn btn-secondary" href="@Contact.GitHub" target="_blank" rel="noopener">GitHub</a>
+                @if (!string.IsNullOrWhiteSpace(Contact.CvUrl))
+                {
+                    <a class="btn btn-ghost" href="@Contact.CvUrl" target="_blank" rel="noopener">Download CV</a>
+                }
+                else
+                {
+                    <button class="btn btn-ghost" type="button" disabled>Download CV</button>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+
+@code {
+    [Parameter] public ContactInfo Contact { get; set; } = new();
+
+    private bool HasConfiguredEmail =>
+        !string.IsNullOrWhiteSpace(Contact.Email)
+        && Contact.Email.Contains('@')
+        && !Contact.Email.Contains("example", StringComparison.OrdinalIgnoreCase)
+        && !Contact.Email.Contains("placeholder", StringComparison.OrdinalIgnoreCase);
+}
+
