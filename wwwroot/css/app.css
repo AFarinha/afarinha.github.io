@@ -314,7 +314,13 @@ h1:focus {
 .hero .btn-secondary,
 .hero .btn-ghost {
     color: var(--text-inverse);
+    background: rgba(255, 255, 255, 0.1);
     border-color: rgba(255, 255, 255, 0.2);
+}
+
+.hero .btn-secondary:hover,
+.hero .btn-ghost:hover {
+    background: rgba(255, 255, 255, 0.16);
 }
 
 .hero-panel {
@@ -678,6 +684,17 @@ h1:focus {
 .contact-section .btn-secondary,
 .contact-section .btn-ghost {
     color: var(--text-inverse);
+}
+
+.contact-section .btn-secondary,
+.contact-section .btn-ghost {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.contact-section .btn-secondary:hover,
+.contact-section .btn-ghost:hover {
+    background: rgba(255, 255, 255, 0.16);
 }
 
 .contact-section .section-title p,

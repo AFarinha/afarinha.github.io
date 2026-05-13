@@ -1,0 +1,78 @@
+﻿[
+  {
+    "title": "Healthcare Backend APIs",
+    "description": "Development and maintenance of REST APIs for healthcare-related business processes, with focus on reliability, security, integrations, and production support.",
+    "highlights": [
+      "Backend API development.",
+      "Secure authentication.",
+      "Azure integrations.",
+      "Production monitoring and support.",
+      "Business-critical healthcare processes."
+    ],
+    "technologies": [
+      "C#",
+      ".NET 6",
+      "REST APIs",
+      "Azure Blob Storage",
+      "Azure API Management",
+      "JWT",
+      "SQL Server"
+    ]
+  },
+  {
+    "title": "Banking Legacy Systems",
+    "description": "Corrective and evolutionary development of internal banking applications in the credit area, focused on stability, reliability, and maintenance of legacy enterprise systems.",
+    "highlights": [
+      "Legacy system maintenance.",
+      "Corrective and evolutionary development.",
+      "SQL Server troubleshooting.",
+      "SOAP services.",
+      "Banking-grade reliability."
+    ],
+    "technologies": [
+      "C#",
+      ".NET Framework",
+      "SQL Server",
+      "Web Forms",
+      "Windows Services",
+      "SOAP"
+    ]
+  },
+  {
+    "title": "nopCommerce Custom Development",
+    "description": "Customisation and extension of nopCommerce-based solutions, including custom features and plugins to support business-specific requirements.",
+    "highlights": [
+      "Platform configuration.",
+      "Plugin development.",
+      "Custom business features.",
+      "E-commerce-oriented solutions.",
+      "Extension of existing platform capabilities."
+    ],
+    "technologies": [
+      "C#",
+      ".NET",
+      "MVC",
+      "nopCommerce",
+      "SQL Server"
+    ]
+  },
+  {
+    "title": "Enterprise Web Applications",
+    "description": "Development of custom enterprise web applications using .NET Core, Angular, and TypeScript, focused on client-specific business requirements and scalable application structure.",
+    "highlights": [
+      "Custom enterprise applications.",
+      "Backend and frontend development.",
+      "Client-specific requirements.",
+      "REST APIs.",
+      "Scalable web application structure."
+    ],
+    "technologies": [
+      "C#",
+      ".NET Core",
+      "Angular",
+      "TypeScript",
+      "SQL Server"
+    ]
+  }
+]
+
