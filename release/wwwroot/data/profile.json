@@ -1,0 +1,25 @@
+﻿{
+  "name": "André Farinha",
+  "role": "Senior .NET Backend Developer",
+  "headline": "Senior .NET Backend Developer | C# | ASP.NET Core | SQL Server | REST APIs | Azure Integrations | Legacy Modernization",
+  "subtitle": "Backend-focused .NET developer with 10+ years of experience building enterprise applications, REST APIs, integrations, and production-critical systems.",
+  "summary": "Experienced in healthcare, banking, insurance, retail, and custom enterprise solutions, with a strong focus on backend engineering, Azure integrations, SQL Server, production support, and legacy modernization.",
+  "location": "Portugal",
+  "highlights": [
+    "10+ Years Experience",
+    ".NET Backend",
+    "Enterprise Systems",
+    "Azure Certified",
+    "REST APIs",
+    "SQL Server"
+  ],
+  "aboutParagraphs": [
+    "Senior .NET Backend Developer with 10+ years of experience designing, developing, and maintaining enterprise applications across healthcare, banking, insurance, retail, and custom business solutions.",
+    "My main focus is backend development with C#, .NET, ASP.NET Core, REST APIs, SQL Server, Azure integrations, and secure authentication mechanisms. I have experience building and maintaining APIs, scheduled background jobs, integrations with external systems, and production-critical applications where reliability, maintainability, and observability are essential.",
+    "Throughout my career, I have worked with both modern .NET solutions and legacy enterprise systems, including .NET Framework, Web Forms, Windows Services, SOAP services, and SQL Server. This gives me a pragmatic understanding of software modernization, long-term maintainability, and gradual migration from legacy platforms to more modern architectures.",
+    "I also have experience with fullstack and mobile technologies such as Angular, TypeScript, Xamarin, and React Native, but my strongest focus today is backend engineering, API design, integrations, troubleshooting, production support, and modernization of .NET applications.",
+    "I value clean and pragmatic architecture, reliable delivery, clear communication, and working with teams that build software with real business impact."
+  ],
+  "azureHighlight": "Azure Fundamentals and Azure Data Fundamentals certified, with practical experience using Azure services such as Blob Storage and API Management in enterprise backend solutions."
+}
+

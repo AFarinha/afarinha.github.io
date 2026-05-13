@@ -1,0 +1,6 @@
+﻿User-agent: *
+Allow: /
+
+Sitemap: https://afarinha.github.io/sitemap.xml
+
+

@@ -1,0 +1,126 @@
+﻿[
+  {
+    "name": "Backend Development",
+    "description": "Core .NET backend development, API delivery, authentication, and background processing.",
+    "skills": [
+      "C#",
+      ".NET",
+      "ASP.NET Core",
+      ".NET Core",
+      ".NET 6",
+      ".NET Framework",
+      "REST APIs",
+      "Web API",
+      "Windows Services",
+      "SOAP Web Services",
+      "JSON",
+      "JWT",
+      "Bearer token authentication",
+      "Background jobs"
+    ]
+  },
+  {
+    "name": "Databases",
+    "description": "SQL Server development, troubleshooting, relational modelling, and data access.",
+    "skills": [
+      "SQL Server",
+      "Entity Framework",
+      "SQL",
+      "Database troubleshooting",
+      "Data access layers",
+      "Stored procedures",
+      "Relational data modelling"
+    ]
+  },
+  {
+    "name": "Cloud & Azure",
+    "description": "Azure fundamentals, data concepts, integration services, governance, and security basics.",
+    "skills": [
+      "Microsoft Azure",
+      "Azure Fundamentals",
+      "Azure Data Fundamentals",
+      "Azure Blob Storage",
+      "Azure API Management",
+      "Azure integrations",
+      "Cloud concepts",
+      "Azure governance basics",
+      "Azure security basics",
+      "Azure data services",
+      "Relational and non-relational data concepts",
+      "Analytics workloads on Azure"
+    ]
+  },
+  {
+    "name": "Cloud & Integrations",
+    "description": "Secure communication with external systems and API-based integration patterns.",
+    "skills": [
+      "External service integrations",
+      "WSO2",
+      "API authentication and authorization",
+      "REST integrations",
+      "Secure API communication"
+    ]
+  },
+  {
+    "name": "Frontend & Fullstack",
+    "description": "Frontend and fullstack experience used to support complete enterprise application delivery.",
+    "skills": [
+      "Angular",
+      "TypeScript",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "ASP.NET Web Forms"
+    ]
+  },
+  {
+    "name": "Mobile",
+    "description": "Cross-platform and native mobile development experience.",
+    "skills": [
+      "Xamarin Forms",
+      "Xamarin.Android",
+      "Xamarin.iOS",
+      "React Native"
+    ]
+  },
+  {
+    "name": "Architecture & Engineering",
+    "description": "Maintainable backend design, modernization, troubleshooting, and production support.",
+    "skills": [
+      "Backend solution design",
+      "API design",
+      "Legacy application maintenance",
+      "Application modernization",
+      "Production support",
+      "Troubleshooting",
+      "Clean architecture principles",
+      "Pragmatic DDD concepts",
+      "Maintainable software design",
+      "Enterprise application development"
+    ]
+  },
+  {
+    "name": "DevOps & Tools",
+    "description": "Source control, delivery pipelines, and collaboration platforms.",
+    "skills": [
+      "Git",
+      "GitLab",
+      "GitHub",
+      "Azure DevOps",
+      "TFS",
+      "CI/CD concepts"
+    ]
+  },
+  {
+    "name": "Platforms & Frameworks",
+    "description": "Enterprise and commerce platforms used in custom business solutions.",
+    "skills": [
+      "nopCommerce",
+      ".NET Zero",
+      "PHC",
+      "Primavera",
+      "Crystal Reports"
+    ]
+  }
+]
+

@@ -12,9 +12,9 @@
                 <a class="btn btn-secondary" href="#skills">Technical Skills</a>
                 <a class="btn btn-secondary" href="#projects">Featured Projects</a>
                 <a class="btn btn-secondary" href="#contact">Contact Me</a>
-                @if (!string.IsNullOrWhiteSpace(Contact.CvUrl))
+                @if (cvAvailable)
                 {
-                    <a class="btn btn-ghost" href="@Contact.CvUrl" target="_blank" rel="noopener">Download CV</a>
+                    <a class="btn btn-ghost" href="@Contact.CvUrl" target="_blank" rel="noopener" download>Download CV</a>
                 }
                 else
                 {
@@ -41,7 +41,42 @@
 </section>
 
 @code {
+    [Inject] private HttpClient HttpClient { get; set; } = default!;
+
     [Parameter] public ProfileInfo Profile { get; set; } = new();
     [Parameter] public ContactInfo Contact { get; set; } = new();
+
+    private bool cvAvailable;
+    private string checkedCvUrl = string.Empty;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (checkedCvUrl == Contact.CvUrl)
+        {
+            return;
+        }
+
+        checkedCvUrl = Contact.CvUrl;
+        cvAvailable = await UrlExistsAsync(Contact.CvUrl);
+    }
+
+    private async Task<bool> UrlExistsAsync(string? url)
+    {
+        if (string.IsNullOrWhiteSpace(url))
+        {
+            return false;
+        }
+
+        try
+        {
+            using var request = new HttpRequestMessage(HttpMethod.Head, url);
+            using var response = await HttpClient.SendAsync(request);
+            return response.IsSuccessStatusCode;
+        }
+        catch
+        {
+            return false;
+        }
+    }
 }
 
